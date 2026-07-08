@@ -1,0 +1,33 @@
+{
+  "official": "Команданың ресми сайты",
+  "home": "Басты бет",
+  "players": "Ойыншылар",
+  "matches": "Матчтар",
+  "statistics": "Статистика",
+  "achievements": "Жетістіктер",
+
+  "back": "Артқа",
+  "playerNotFound": "Ойыншы табылмады",
+  "years": "жас",
+  "attributes": "Сипаттамалар",
+
+  "pace": "Жылдамдық",
+  "shooting": "Соққы",
+  "passing": "Пас",
+  "dribbling": "Дриблинг",
+  "defending": "Қорғаныс",
+  "physical": "Физика",
+
+  "goals": "Голдар",
+  "assists": "Ассисттер",
+
+  "welcome": "Қош келдіңіз!",
+
+  "tactics": "Тактика",
+  "tacticsTitle": "Team 7G Тактикасы",
+  "backHome": "Басты бетке",
+  "mainLineup": "Негізгі құрам",
+  "bench": "Қосалқы құрам",
+  "tacticalScheme": "Тактикалық схема",
+  "seasonStart": "Маусым қыркүйекте басталады"
+}

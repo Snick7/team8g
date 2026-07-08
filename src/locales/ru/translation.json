@@ -1,0 +1,33 @@
+{
+  "official": "Официальный сайт команды",
+  "home": "Главная",
+  "players": "Игроки",
+  "matches": "Матчи",
+  "statistics": "Статистика",
+  "achievements": "Достижения",
+
+  "back": "Назад",
+  "playerNotFound": "Игрок не найден",
+  "years": "лет",
+  "attributes": "Характеристики",
+
+  "pace": "Скорость",
+  "shooting": "Удар",
+  "passing": "Пас",
+  "dribbling": "Дриблинг",
+  "defending": "Защита",
+  "physical": "Физика",
+
+  "goals": "Голы",
+  "assists": "Ассисты",
+
+  "welcome": "Добро пожаловать!",
+
+  "tactics": "Тактика",
+  "tacticsTitle": "Тактика Team 7G",
+  "backHome": "На главную",
+  "mainLineup": "Основной состав",
+  "bench": "Скамейка запасных",
+  "tacticalScheme": "Тактическая схема",
+  "seasonStart": "Сезон начнется в сентябре"
+}

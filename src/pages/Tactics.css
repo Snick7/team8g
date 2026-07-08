@@ -1,0 +1,97 @@
+.tacticsPage{
+    min-height:100vh;
+    background:#0f1117;
+    color:white;
+    padding:40px;
+}
+
+.tacticsHeader{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:40px;
+}
+
+.tacticsHeader h1{
+    color:#ff9800;
+    font-size:40px;
+}
+
+.topSection{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:30px;
+    margin-bottom:40px;
+}
+
+.card{
+    background:#1b1f2a;
+    border:2px solid #2d3446;
+    border-radius:20px;
+    padding:25px;
+    transition:.3s;
+}
+
+.card:hover{
+    border-color:#ff9800;
+    box-shadow:0 0 20px rgba(255,152,0,.25);
+}
+
+.card h2{
+    color:#ff9800;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.tacticsImage{
+    width:80%;
+    max-width:500px;
+    display:block;
+    margin:0 auto;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.tacticsImage:hover{
+    transform:scale(1.03);
+}
+
+.bottomCard{
+    width:100%;
+}
+
+.tacticsImageLarge{
+    width:80%;
+    max-width:800px;
+    display:block;
+    margin:0 auto;
+    border-radius:15px;
+}
+
+.tacticsImageLarge:hover{
+    transform:scale(1.02);
+}
+
+.backBtn{
+    background:#ff9800;
+    color:white;
+    text-decoration:none;
+    padding:12px 22px;
+    border-radius:12px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.backBtn:hover{
+    transform:translateY(-3px);
+}
+
+@media(max-width:900px){
+
+.topSection{
+
+grid-template-columns:1fr;
+
+}
+
+}
