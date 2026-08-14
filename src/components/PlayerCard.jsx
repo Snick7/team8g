@@ -4,21 +4,56 @@ import { useNavigate } from "react-router-dom";
 function PlayerCard({ player }) {
   const navigate = useNavigate();
 
+  const isCaptain = player.id === 1;
+
   return (
     <div
-      className="player-card"
+      className={`player-card ${isCaptain ? "captain-card" : ""}`}
       onClick={() => navigate(`/player/${player.id}`)}
     >
-      <img src={player.photo} alt={player.name} />
+      {/* Статус капитана */}
+      {isCaptain && (
+        <div className="captain-badge">
+          👑 КАПИТАН
+        </div>
+      )}
 
+      {/* Фото */}
+      <div className="player-photo">
+        <img src={player.photo} alt={player.name} />
+      </div>
+
+      {/* Информация */}
       <div className="player-info">
-        <h2>{player.name}</h2>
 
-        <p>{player.positions.join(" • ")}</p>
+        <div className="player-top">
+          <div>
+            <h2>{player.name}</h2>
 
-        <span className="rating">
-          ⭐ OVR {player.rating}
-        </span>
+            <p className="player-position">
+              {player.positions.join(" • ")}
+            </p>
+          </div>
+
+          {player.number && (
+            <span className="player-number">
+              #{player.number}
+            </span>
+          )}
+        </div>
+
+        <div className="player-bottom">
+
+          <div className="player-role">
+            {isCaptain ? "Капитан команды" : "Игрок Team 8G"}
+          </div>
+
+          <span className="rating">
+            ⭐ {player.rating} OVR
+          </span>
+
+        </div>
+
       </div>
     </div>
   );

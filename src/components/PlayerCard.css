@@ -1,3 +1,5 @@
+/* ================= PLAYERS ================= */
+
 .players {
   width: 100%;
   max-width: 1800px;
@@ -11,48 +13,314 @@
   gap: 50px;
 }
 
+
+/* ================= ОБЫЧНАЯ КАРТОЧКА ================= */
+
 .player-card {
+  position: relative;
+
   width: 240px;
+
   background: #1b1f2b;
+
   border-radius: 18px;
   overflow: hidden;
+
   border: 2px solid #2c3346;
-  transition: 0.3s ease;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+
   cursor: pointer;
 }
 
 .player-card:hover {
   transform: translateY(-8px);
+
   border-color: #ff9800;
-  box-shadow: 0 0 25px rgba(255, 152, 0, 0.4);
+
+  box-shadow:
+    0 0 25px rgba(255, 152, 0, 0.4);
+}
+
+
+/* ================= ФОТО ================= */
+
+.player-photo {
+  position: relative;
+
+  width: 100%;
+  height: 280px;
+
+  overflow: hidden;
+
+  background: #11151d;
 }
 
 .player-card img {
   width: 100%;
-  height: 260px;
+  height: 100%;
+
   object-fit: cover;
+
+  display: block;
+
+  transition: transform 0.4s ease;
 }
+
+.player-card:hover img {
+  transform: scale(1.05);
+}
+
+
+/* ================= ИНФОРМАЦИЯ ================= */
 
 .player-info {
   padding: 18px;
 }
 
-.player-info h2 {
-  color: white;
-  font-size: 24px;
-  margin-bottom: 10px;
+.player-top {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: flex-start;
+
+  gap: 10px;
 }
 
-.player-info p {
-  color: #c7c7c7;
-  margin-bottom: 15px;
+.player-info h2 {
+  color: white;
+
+  font-size: 24px;
+
+  margin: 0 0 7px 0;
 }
+
+.player-position {
+  color: #c7c7c7;
+
+  margin: 0;
+
+  font-size: 14px;
+}
+
+
+/* ================= НОМЕР ================= */
+
+.player-number {
+  color: #888fa0;
+
+  font-size: 20px;
+
+  font-weight: 800;
+
+  white-space: nowrap;
+}
+
+
+/* ================= НИЗ КАРТОЧКИ ================= */
+
+.player-bottom {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 10px;
+
+  margin-top: 18px;
+}
+
+.player-role {
+  color: #9da3b0;
+
+  font-size: 12px;
+
+  line-height: 1.3;
+}
+
+
+/* ================= OVR ================= */
 
 .rating {
   display: inline-block;
+
   background: #ff9800;
+
   color: black;
-  padding: 8px 14px;
+
+  padding: 8px 12px;
+
   border-radius: 8px;
+
   font-weight: bold;
+
+  font-size: 14px;
+
+  white-space: nowrap;
+}
+
+
+/* ================================================= */
+/* ================= КАПИТАН ====================== */
+/* ================================================= */
+
+.captain-card {
+  border: 2px solid #ffb300;
+
+  background:
+    linear-gradient(
+      180deg,
+      #252015 0%,
+      #1b1f2b 45%,
+      #151923 100%
+    );
+
+  box-shadow:
+    0 0 18px rgba(255, 179, 0, 0.18);
+}
+
+.captain-card:hover {
+  transform: translateY(-12px);
+
+  border-color: #ffc107;
+
+  box-shadow:
+    0 0 30px rgba(255, 179, 0, 0.5);
+}
+
+
+/* ================= БЕЙДЖ КАПИТАНА ================= */
+
+.captain-badge {
+  position: absolute;
+
+  top: 12px;
+  left: 12px;
+
+  z-index: 5;
+
+  background: linear-gradient(
+    135deg,
+    #ffb300,
+    #ff8f00
+  );
+
+  color: #171717;
+
+  padding: 7px 11px;
+
+  border-radius: 8px;
+
+  font-size: 12px;
+
+  font-weight: 900;
+
+  letter-spacing: 0.5px;
+
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.35);
+}
+
+
+/* ================= КАПИТАНСКОЕ ФОТО ================= */
+
+.captain-card .player-photo {
+  height: 300px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 179, 0, 0.08),
+      transparent
+    );
+}
+
+.captain-card .player-photo::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: 80px;
+
+  background: linear-gradient(
+    transparent,
+    rgba(0, 0, 0, 0.65)
+  );
+
+  pointer-events: none;
+}
+
+
+/* ================= ИМЯ КАПИТАНА ================= */
+
+.captain-card .player-info h2 {
+  color: #ffc107;
+
+  font-size: 27px;
+
+  letter-spacing: 0.5px;
+}
+
+.captain-card .player-position {
+  color: #e0e0e0;
+}
+
+
+/* ================= НОМЕР КАПИТАНА ================= */
+
+.captain-card .player-number {
+  color: #ffc107;
+
+  font-size: 24px;
+}
+
+
+/* ================= РОЛЬ КАПИТАНА ================= */
+
+.captain-card .player-role {
+  color: #ffc107;
+
+  font-weight: 700;
+}
+
+
+/* ================= OVR КАПИТАНА ================= */
+
+.captain-card .rating {
+  background: linear-gradient(
+    135deg,
+    #ffc107,
+    #ff9800
+  );
+
+  font-size: 15px;
+
+  padding: 9px 13px;
+
+  box-shadow:
+    0 0 12px rgba(255, 179, 0, 0.25);
+}
+
+
+/* ================= АДАПТИВ ================= */
+
+@media (max-width: 600px) {
+
+  .players {
+    padding: 0 20px;
+
+    gap: 25px;
+  }
+
+  .player-card {
+    width: 240px;
+  }
+
 }
