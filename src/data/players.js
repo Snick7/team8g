@@ -16,64 +16,41 @@ const players = [
     photo: ruslan,
     age: 13,
     number: 7,
-    rating: 91,
+    rating: 89,
 
     matches: 0,
     goals: 0,
     assists: 0,
     pace: 95,
 shooting: 97,
-passing: 85,
-dribbling: 89,
+passing: 83,
+dribbling: 80,
 defending: 81,
 physical: 89,
 
   },
 
   {
-  id: 2,
-  name: "Ернур",
-  fullName: "Еркенулы Ернур",
-
-  positions: ["Нап", "ЛВ"],
-  photo: ernur,
-
-  age: 13,
-  number: 80,
-  rating: 93,
-
-  matches: 0,
-  goals: 0,
-  assists: 0,
-
-  pace: 95,
-  shooting: 90,
-  passing: 85,
-  dribbling: 97,
-  defending: 42,
-  physical: 78,
-},
-  {
   id: 3,
   fullName: "Жумабай Ерболат",
 
   name: "Ерболат",
 
-  positions: ["Нап", "ЦП", "Врт"],
+  positions: ["Нап", "ЦП",],
 
   photo: erbolat,
 
   age: 13,
-  number: 1,
+  number: 6,
 
-  rating: 85,
+  rating: 89,
 
-  pace: 79,
-  shooting: 78,
-  passing: 85,
-  dribbling: 82,
+  pace: 82,
+  shooting: 80,
+  passing: 89,
+  dribbling: 85,
   defending: 74,
-  physical: 70,
+  physical: 85,
 
   matches: 0,
   goals: 0,
@@ -101,7 +78,7 @@ physical: 89,
   passing: 72,
   dribbling: 69,
   defending: 82,
-  physical: 80,
+  physical: 79,
 },
 
  
@@ -115,17 +92,17 @@ physical: 89,
 
   age: 13,
   number: 10,
-  rating: 89,
+  rating: 90,
 
   matches: 0,
   goals: 0,
   assists: 0,
 
-  pace: 84,
+  pace: 85,
   shooting: 89,
   passing: 92,
   dribbling: 93,
-  defending: 90,
+  defending: 80,
   physical: 77,
 },
 
@@ -147,7 +124,7 @@ physical: 89,
   passing: 55,
   dribbling: 35,
   defending: 70,
-  physical: 60,
+  physical: 70,
 },
 
 {

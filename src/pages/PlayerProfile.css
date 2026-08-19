@@ -1,81 +1,429 @@
+/* ================================================= */
+/* ================ PROFILE PAGE ================== */
+/* ================================================= */
 
-.profilePage{
-    min-height:100vh;
-    background:#111827;
-    color:white;
-    padding:40px;
-}
-
-.profileCard{
-    max-width:1100px;
-    margin:auto;
-    background:#1f2937;
-    border-radius:20px;
-    display:flex;
-    gap:50px;
-    padding:40px;
-}
-
-.leftSide{
-    width:320px;
-    text-align:center;
-}
-
-.profileImg{
-    width:260px;
-    height:340px;
-    object-fit:cover;
-    border-radius:20px;
-}
-
-.rightSide{
-    flex:1;
-}
-
-.stat{
-    margin-bottom:18px;
-}
-
-.statTop{
-    display:flex;
-    justify-content:space-between;
-    margin-bottom:5px;
-}
-
-.bar{
-    width:100%;
-    height:12px;
-    background:#2b3442;
-    border-radius:10px;
-}
-
-.fill{
-    height:100%;
-    background:#00d26a;
-    border-radius:10px;
-}
-
-.info{
-    margin-top:40px;
-    font-size:18px;
-}
-
-.backBtn{
-    margin-bottom:20px;
-    background:#00d26a;
-    border:none;
-    color:white;
-    padding:10px 20px;
-    border-radius:8px;
-    cursor:pointer;
-}
 .profilePage {
+  min-height: 100vh;
+  padding: 40px 25px 70px;
+
+  color: white;
+
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(0, 210, 106, 0.12),
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #080b12 0%,
+      #111827 45%,
+      #0b1018 100%
+    );
+
   animation: fadeIn 0.5s ease;
 }
 
+
+/* ================================================= */
+/* ================= BACK BUTTON ================== */
+/* ================================================= */
+
+.backBtn {
+  display: block;
+
+  margin: 0 auto 30px;
+
+  padding: 11px 22px;
+
+  border: 1px solid rgba(0, 210, 106, 0.4);
+  border-radius: 10px;
+
+  background: rgba(0, 210, 106, 0.12);
+
+  color: #00d26a;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.backBtn:hover {
+  background: rgba(0, 210, 106, 0.22);
+
+  transform: translateX(-4px);
+
+  box-shadow:
+    0 0 20px rgba(0, 210, 106, 0.2);
+}
+
+
+/* ================================================= */
+/* ================= PROFILE CARD ================= */
+/* ================================================= */
+
 .profileCard {
+  position: relative;
+
+  max-width: 1150px;
+
+  min-height: 560px;
+
+  margin: 0 auto;
+
+  padding: 40px;
+
+  display: flex;
+
+  gap: 55px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  border-radius: 28px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(31, 41, 55, 0.97),
+      rgba(15, 23, 42, 0.98)
+    );
+
+  box-shadow:
+    0 25px 70px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+
+  overflow: hidden;
+
   animation: scaleIn 0.45s ease;
 }
+
+
+/* Световой фон внутри карточки */
+
+.profileCard::before {
+  content: "";
+
+  position: absolute;
+
+  width: 450px;
+  height: 450px;
+
+  top: -220px;
+  left: -180px;
+
+  border-radius: 50%;
+
+  background: rgba(0, 210, 106, 0.08);
+
+  filter: blur(80px);
+
+  pointer-events: none;
+}
+
+
+/* ================================================= */
+/* =================== LEFT SIDE ================== */
+/* ================================================= */
+
+.leftSide {
+  position: relative;
+
+  width: 350px;
+
+  flex-shrink: 0;
+
+  text-align: center;
+
+  padding: 10px 0;
+}
+
+
+/* ================================================= */
+/* ================= PLAYER PHOTO ================= */
+/* ================================================= */
+
+.profileImg {
+  width: 300px;
+  height: 390px;
+
+  object-fit: cover;
+
+  display: block;
+
+  margin: 0 auto 22px;
+
+  border-radius: 22px;
+
+  border: 2px solid rgba(0, 210, 106, 0.35);
+
+  box-shadow:
+    0 20px 45px rgba(0, 0, 0, 0.5),
+    0 0 30px rgba(0, 210, 106, 0.12);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.profileImg:hover {
+  transform: scale(1.02);
+
+  box-shadow:
+    0 25px 55px rgba(0, 0, 0, 0.55),
+    0 0 40px rgba(0, 210, 106, 0.2);
+}
+
+
+/* ================================================= */
+/* ================= PLAYER NAME ================== */
+/* ================================================= */
+
+.leftSide h1 {
+  margin: 0 0 10px;
+
+  color: #ffffff;
+
+  font-size: 29px;
+
+  line-height: 1.2;
+
+  font-weight: 900;
+
+  letter-spacing: 0.3px;
+}
+
+
+/* ================================================= */
+/* ===================== OVR ===================== */
+/* ================================================= */
+
+.leftSide h3 {
+  display: inline-block;
+
+  margin: 4px 0 12px;
+
+  padding: 8px 14px;
+
+  border-radius: 9px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #00e676,
+      #00b85c
+    );
+
+  color: #06130c;
+
+  font-size: 18px;
+
+  font-weight: 900;
+
+  box-shadow:
+    0 0 18px rgba(0, 210, 106, 0.25);
+}
+
+
+/* ================================================= */
+/* ================= PLAYER INFO ================== */
+/* ================================================= */
+
+.leftSide p {
+  margin: 7px 0;
+
+  color: #aeb7c5;
+
+  font-size: 15px;
+
+  font-weight: 600;
+}
+
+.leftSide p:last-child {
+  color: #00d26a;
+
+  font-weight: 800;
+}
+
+
+/* ================================================= */
+/* =================== RIGHT SIDE ================= */
+/* ================================================= */
+
+.rightSide {
+  position: relative;
+
+  flex: 1;
+
+  min-width: 0;
+
+  padding-top: 10px;
+}
+
+
+/* ================================================= */
+/* ================= ATTRIBUTES =================== */
+/* ================================================= */
+
+.rightSide h2 {
+  margin: 0 0 30px;
+
+  font-size: 28px;
+
+  font-weight: 900;
+
+  color: white;
+
+  letter-spacing: 0.5px;
+}
+
+.rightSide h2::after {
+  content: "";
+
+  display: block;
+
+  width: 55px;
+  height: 4px;
+
+  margin-top: 10px;
+
+  border-radius: 5px;
+
+  background: #00d26a;
+
+  box-shadow:
+    0 0 12px rgba(0, 210, 106, 0.4);
+}
+
+
+/* ================================================= */
+/* ===================== STAT ===================== */
+/* ================================================= */
+
+.stat {
+  margin-bottom: 22px;
+}
+
+.statTop {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 8px;
+
+  font-size: 15px;
+
+  font-weight: 800;
+}
+
+.statTop span:first-child {
+  color: #dce2ea;
+}
+
+.statTop span:last-child {
+  color: #00e676;
+
+  font-size: 16px;
+}
+
+
+/* ================================================= */
+/* ====================== BAR ===================== */
+/* ================================================= */
+
+.bar {
+  position: relative;
+
+  width: 100%;
+
+  height: 11px;
+
+  overflow: hidden;
+
+  border-radius: 20px;
+
+  background:
+    #273142;
+
+  box-shadow:
+    inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+/* ================================================= */
+/* ====================== FILL ==================== */
+/* ================================================= */
+
+.fill {
+  height: 100%;
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #00a94f,
+      #00d26a,
+      #00f080
+    );
+
+  box-shadow:
+    0 0 12px rgba(0, 210, 106, 0.35);
+
+  transition:
+    width 0.8s ease;
+}
+
+
+/* ================================================= */
+/* ===================== INFO ===================== */
+/* ================================================= */
+
+.info {
+  margin-top: 38px;
+
+  padding: 22px 25px;
+
+  border: 1px solid rgba(255, 255, 255, 0.07);
+
+  border-radius: 16px;
+
+  background:
+    rgba(8, 12, 20, 0.45);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+.info p {
+  margin: 12px 0;
+
+  color: #c8d0dc;
+
+  font-size: 16px;
+
+  font-weight: 600;
+}
+
+.info p:first-child {
+  margin-top: 0;
+}
+
+.info p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ================================================= */
+/* =================== ANIMATIONS ================= */
+/* ================================================= */
 
 @keyframes fadeIn {
   from {
@@ -90,13 +438,102 @@
 @keyframes scaleIn {
   from {
     opacity: 0;
-    transform: translateY(20px) scale(0.96);
+
+    transform:
+      translateY(25px)
+      scale(0.97);
   }
 
   to {
     opacity: 1;
-    transform: translateY(0) scale(1);
+
+    transform:
+      translateY(0)
+      scale(1);
+  }
+}
+
+
+/* ================================================= */
+/* ==================== MOBILE =================== */
+/* ================================================= */
+
+@media (max-width: 850px) {
+
+  .profilePage {
+    padding: 25px 15px 50px;
   }
 
+  .profileCard {
+    flex-direction: column;
 
- } 
+    align-items: center;
+
+    gap: 35px;
+
+    padding: 30px 22px;
+  }
+
+  .leftSide {
+    width: 100%;
+  }
+
+  .profileImg {
+    width: min(300px, 100%);
+
+    height: 380px;
+  }
+
+  .rightSide {
+    width: 100%;
+  }
+
+  .rightSide h2 {
+    text-align: center;
+  }
+
+  .rightSide h2::after {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+/* ================================================= */
+/* ================= SMALL MOBILE ================= */
+/* ================================================= */
+
+@media (max-width: 480px) {
+
+  .profilePage {
+    padding: 18px 10px 40px;
+  }
+
+  .profileCard {
+    padding: 22px 15px;
+
+    border-radius: 20px;
+  }
+
+  .profileImg {
+    height: 330px;
+
+    border-radius: 17px;
+  }
+
+  .leftSide h1 {
+    font-size: 24px;
+  }
+
+  .rightSide h2 {
+    font-size: 24px;
+  }
+
+  .stat {
+    margin-bottom: 18px;
+  }
+
+  .info {
+    padding: 18px;
+  }
+}

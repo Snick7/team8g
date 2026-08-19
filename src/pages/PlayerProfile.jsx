@@ -69,7 +69,7 @@ function PlayerProfile() {
           <Stat name={`🎮 ${t("passing")}`} value={player.passing} />
           <Stat name={`🪄 ${t("dribbling")}`} value={player.dribbling} />
           <Stat name={`🛡 ${t("defending")}`} value={player.defending} />
-          
+          <Stat name={`💪 ${t("physical")}`} value={player.physical} />
 
           <div className="info">
 
