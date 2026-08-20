@@ -12,7 +12,7 @@ const players = [
   {
   id: 1,
   name: "Руслан",
-  positions: ["Нап", "ЛВ"],
+  positions: ["Нап", "ЛВ", "ЦП"],
   photo: ruslan,
   age: 13,
   number: 7,
@@ -64,7 +64,7 @@ const players = [
   photo: serzhan,
 
   age: 12,
-  number: 4,
+  number: 8,
   rating: 79,
 
   matches: 0,
@@ -178,7 +178,7 @@ const players = [
   photo: ersain,
 
   age: 13,
-  number: 9,
+  number: 5,
   rating: 82,
 
   matches: 0,
