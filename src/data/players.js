@@ -32,7 +32,7 @@ const players = [
   id: 3,
   fullName: "Жумабай Ерболат",
 
-  name: erbolat,
+  name: Ерболат,
 
   positions: ["Нап", "ЦП",],
 
@@ -57,7 +57,7 @@ const players = [
 
   {
   id: 4,
-  name: serzhan,
+  name: Сержан,
   fullName: "Сембай Сержан",
 
   positions: ["ЦЗ", "ЦП"],
@@ -106,7 +106,7 @@ const players = [
 
 {
   id: 6,
-  name: erasyl,
+  name: Ерасыл,
   positions: ["ЦЗ"],
   photo: erasyl,
   age: 14,
