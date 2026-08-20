@@ -29,23 +29,30 @@ const players = [
   physical: 89,
 },
   {
-  id: 1,
-  name: "Руслан",
-  positions: ["Нап", "ЛВ"],
-  photo: ruslan,
+  id: 3,
+  fullName: "Жумабай Ерболат",
+
+  name: erbolat,
+
+  positions: ["Нап", "ЦП"],
+
+  photo: erbolat,
+
   age: 13,
-  number: 7,
+  number: 6,
+
   rating: 89,
+
+  pace: 82,
+  shooting: 80,
+  passing: 89,
+  dribbling: 85,
+  defending: 74,
+  physical: 85,
 
   matches: 0,
   goals: 0,
   assists: 0,
-  pace: 95,
-  shooting: 97,
-  passing: 83,
-  dribbling: 80,
-  defending: 81,
-  physical: 89,
 },
   {
   id: 4,
