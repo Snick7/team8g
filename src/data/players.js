@@ -34,7 +34,7 @@ physical: 89,
   id: 3,
   fullName: "Жумабай Ерболат",
 
-  name: "Ерболат",
+  name: erbolat,
 
   positions: ["Нап", "ЦП",],
 
@@ -59,7 +59,7 @@ physical: 89,
 
   {
   id: 4,
-  name: "Сержан",
+  name: serzhan,
   fullName: "Сембай Сержан",
 
   positions: ["ЦЗ", "ЦП"],
@@ -108,7 +108,7 @@ physical: 89,
 
 {
   id: 6,
-  name: "Ерасыл",
+  name: erasyl,
   positions: ["ЦЗ"],
   photo: erasyl,
   age: 14,
