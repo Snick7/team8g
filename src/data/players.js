@@ -1,62 +1,52 @@
 import kemel from "../assets/players/kemel.jpg";
 import erasyl from "../assets/players/erasyl.jpg";
-import erbolat from "../assets/players/ruslan.jpg";
+import erbolat from "../assets/players/erbolat.jpg";
 import ernur from "../assets/players/ernur.jpg";
-import ruslan from "../assets/players/erbolat.jpg";
+import ruslan from "../assets/players/ruslan.jpg";
 import serzhan from "../assets/players/serzhan.jpg";
-import nurislam from "../assets/players/nurislam.jpg"
+import nurislam from "../assets/players/nurislam.jpg";
 import alikhan from "../assets/players/alikhan.jpg";
 import ersain from "../assets/players/ersain.jpg";
 ;
 const players = [
   {
-    id: 1,
-    name: "Руслан",
-    positions: ["Нап", "ЛВ"],
-    photo: erbolat,
-    age: 13,
-    number: 7,
-    rating: 89,
-
-    matches: 0,
-    goals: 0,
-    assists: 0,
-    pace: 95,
-shooting: 97,
-passing: 83,
-dribbling: 80,
-defending: 81,
-physical: 89,
-
-  },
-
-  {
-  id: 3,
-  fullName: "Жумабай Ерболат",
-
-  name: erbolat,
-
-  positions: ["Нап", "ЦП",],
-
+  id: 1,
+  name: "Руслан",
+  positions: ["Нап", "ЛВ"],
   photo: ruslan,
-
   age: 13,
-  number: 6,
-
+  number: 7,
   rating: 89,
-
-  pace: 82,
-  shooting: 80,
-  passing: 89,
-  dribbling: 85,
-  defending: 74,
-  physical: 85,
 
   matches: 0,
   goals: 0,
   assists: 0,
+  pace: 95,
+  shooting: 97,
+  passing: 83,
+  dribbling: 80,
+  defending: 81,
+  physical: 89,
 },
+  {
+  id: 1,
+  name: "Руслан",
+  positions: ["Нап", "ЛВ"],
+  photo: ruslan,
+  age: 13,
+  number: 7,
+  rating: 89,
 
+  matches: 0,
+  goals: 0,
+  assists: 0,
+  pace: 95,
+  shooting: 97,
+  passing: 83,
+  dribbling: 80,
+  defending: 81,
+  physical: 89,
+},
   {
   id: 4,
   name: serzhan,
