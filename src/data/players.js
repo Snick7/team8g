@@ -1,8 +1,8 @@
 import kemel from "../assets/players/kemel.jpg";
 import erasyl from "../assets/players/erasyl.jpg";
-import ruslan from "../assets/players/ruslan.jpg";
+import erbolat from "../assets/players/ruslan.jpg";
 import ernur from "../assets/players/ernur.jpg";
-import erbolat from "../assets/players/erbolat.jpg";
+import ruslan from "../assets/players/erbolat.jpg";
 import serzhan from "../assets/players/serzhan.jpg";
 import nurislam from "../assets/players/nurislam.jpg"
 import alikhan from "../assets/players/alikhan.jpg";
@@ -13,7 +13,7 @@ const players = [
     id: 1,
     name: "Руслан",
     positions: ["Нап", "ЛВ"],
-    photo: ruslan,
+    photo: erbolat,
     age: 13,
     number: 7,
     rating: 89,
@@ -38,7 +38,7 @@ physical: 89,
 
   positions: ["Нап", "ЦП",],
 
-  photo: erbolat,
+  photo: ruslan,
 
   age: 13,
   number: 6,
