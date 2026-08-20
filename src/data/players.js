@@ -34,7 +34,7 @@ const players = [
 
   name: erbolat,
 
-  positions: ["Нап", "ЦП"],
+  positions: ["Нап", "ЦП",],
 
   photo: erbolat,
 
@@ -54,6 +54,7 @@ const players = [
   goals: 0,
   assists: 0,
 },
+
   {
   id: 4,
   name: serzhan,
